@@ -147,6 +147,11 @@
     </Compile>
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Migrations\201603060511352_initialcreate.cs" />
+    <Compile Include="Migrations\201603060511352_initialcreate.Designer.cs">
+      <DependentUpon>201603060511352_initialcreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Student.cs" />
@@ -167,6 +172,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.2.1.js" />
     <Content Include="Scripts\jquery-2.2.1.min.js" />
+    <None Include="Properties\PublishProfiles\conujh - Web Deploy.pubxml" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -213,6 +219,11 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-2.2.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201603060511352_initialcreate.resx">
+      <DependentUpon>201603060511352_initialcreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
